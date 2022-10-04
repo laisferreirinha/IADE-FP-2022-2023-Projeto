@@ -28,9 +28,9 @@
 
 ## Datas Relevantes
 
-| Data                      | Evento                         |
+| Data              | Evento                 |
 | ------------------------- | ------------------------------ |
-| 31/10/2022                | Disponibilização do enunciado. |
+| 31/10/2022        | Disponibilização do enunciado. |
 | 15/01/2023 23:59:59       | Entrega final do trabalho.     |
 | 16/01/2023 --- 21/01/2023 | Provas de autoria.             |
 
@@ -173,35 +173,35 @@ Nenhum valor de `TamanhoPeça` pode ser igual ou superior a `TamanhoSequência`.
 
 Entrada:
 
-                IJ Nome Nome
-                Comprimento Altura TamanhoSequência
-                TamanhoPeça TamanhoPeça ... TamanhoPeça
+        IJ Nome Nome
+        Comprimento Altura TamanhoSequência
+        TamanhoPeça TamanhoPeça ... TamanhoPeça
 
 Saída com sucesso:
 
-                Jogo iniciado entre Nome e Nome.
+        Jogo iniciado entre Nome e Nome.
 
 Saída com insucesso:
 
 - Quando já existe um jogo em curso.
 
-                Existe um jogo em curso.
+        Existe um jogo em curso.
 
 - Quando algum dos jogadores indicados não se encontra registado.
 
-                Jogador não registado.
+        Jogador não registado.
 
 - Quando as dimensões da grelha não respeitam as regras indicadas na  secção sobre [parâmetros do jogo](#parâmetros-de-jogo).
 
-                Dimensões de grelha inválidas.
+        Dimensões de grelha inválidas.
 
 - Quando tamanho da sequência vencedora não respeita as regras indicadas na Secção sobre [parâmetros do jogo](#parâmetros-de-jogo).
 
-                Tamanho de sequência inválido.
+        Tamanho de sequência inválido.
 
 - Quando alguma dimensão das peças especiais não respeita as regras indicadas na Secção sobre [parâmetros do jogo](#parâmetros-de-jogo).
 
-                Dimensões de peças especiais inválidas.
+        Dimensões de peças especiais inválidas.
 
 ### Desistir (D)
 
