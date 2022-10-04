@@ -301,7 +301,7 @@ Mostra o estado atual da grelha do jogo em curso, indicando o conteúdo de cada 
   
 Entrada:
 
-        V
+        VR
   
 Saída com sucesso:
 
