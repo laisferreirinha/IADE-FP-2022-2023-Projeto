@@ -165,29 +165,43 @@ Saída com insucesso:
 
 ### Iniciar Jogo (IJ)
 
-Inicia um novo jogo, se não existir já um jogo iniciado.
+Inicia um novo jogo, se não estiver ainda um jogo iniciado. É necessário indicar o nome dos jogadores que irão participar, as dimensões da grelha, o tamanho da sequência vencedora, e as peças especiais disponíveis. Os jogadores têm que estar previamente registados. O jogo inicia indicando o nome dos jogadores que nele participam por ordem alfabética.
 
-É necessário indicar o nome dos jogadores que irão participar. Estes jogadores têm de estar previamente registados. O jogo entra em curso, sem combate iniciado, indicando, por ordem alfabética, os jogadores que nele participam
+`Nome` é um nome de um jogador, `Comprimento` e `Altura` são as dimensões da grelha de jogo, `TamanhoSequência` é o tamanho da sequência vencedora, e `TamanhoPeça` é o tamanho de uma peça especial.
 
-`Nome` é um nome de um jogador.
+Nenhum valor de `TamanhoPeça` pode ser igual ou superior a `TamanhoSequência`.
 
 Entrada:
 
-        IJ Nome Nome
+                IJ Nome Nome
+                Comprimento Altura TamanhoSequência
+                TamanhoPeça TamanhoPeça ... TamanhoPeça
 
 Saída com sucesso:
 
-        Jogo iniciado entre Nome e Nome.
+                Jogo iniciado entre Nome e Nome.
 
 Saída com insucesso:
 
-- Quando já existe um jogo em curso:
+- Quando já existe um jogo em curso.
 
-        Existe um jogo em curso.
+                Existe um jogo em curso.
 
-- Quando pelo menos um dos jogadores indicados não estão registados.
+- Quando algum dos jogadores indicados não se encontra registado.
 
-        Jogador não registado.
+                Jogador não registado.
+
+- Quando as dimensões da grelha não respeitam as regras indicadas na  secção sobre [parâmetros do jogo](#parâmetros-de-jogo).
+
+                Dimensões de grelha inválidas.
+
+- Quando tamanho da sequência vencedora não respeita as regras indicadas na Secção sobre [parâmetros do jogo](#parâmetros-de-jogo).
+
+                Tamanho de sequência inválido.
+
+- Quando alguma dimensão das peças especiais não respeita as regras indicadas na Secção sobre [parâmetros do jogo](#parâmetros-de-jogo).
+
+                Dimensões de peças especiais inválidas.
 
 ### Desistir (D)
 
