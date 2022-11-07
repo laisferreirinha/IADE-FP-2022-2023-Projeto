@@ -367,13 +367,13 @@ A estrutura mínima do projeto deve ser a seguinte:
 
 O ficheiro `src/main.c` disponibilizado inclui código condicional que assegura que o caráter sinalizador de *nova linha* (`\n`) não é convertido para o padrão Windows (`\r\n`).
 
-O repositório de referência está disponível em <https://github.com/IADE-FP/Projeto>
+O repositório de referência está disponível em <https://github.com/IADE-FP/IADE-FP-2022-2023-Projeto>
 
 Para efetuar a atualizações:
 
 1. Registar o repositório como `upstream` (só deve acontecer uma vez)
 
-        git remote add upstream https://github.com/IADE-FP/Projeto
+        git remote add upstream https://github.com/IADE-FP/IADE-FP-2022-2023-Projeto
 
 2. Atualizar o `upstream` (sempre que existirem atualizações)
 
