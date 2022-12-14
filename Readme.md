@@ -357,15 +357,11 @@ Saída com insucesso:
 A estrutura mínima do projeto deve ser a seguinte:
 
       projeto
-      |-- src: diretório com todo o código fonte
-      |-- src/main.c : ficheiro com o ponto de entrada do programa
-      |-- bin: diretório com o código compilado
-      |-- Makefile: ficheiro de configuração
+      |-- main.c : ficheiro com o programa.
       |-- iotests : diretório com testes de output, a distribuir pela docência
+      |-- figures : diretório com imagens utilizadas neste ficheiro
       |-- README.md : este ficheiro
       |-- REPORT.md : relatório do projeto
-
-O ficheiro `src/main.c` disponibilizado inclui código condicional que assegura que o caráter sinalizador de *nova linha* (`\n`) não é convertido para o padrão Windows (`\r\n`).
 
 O repositório de referência está disponível em <https://github.com/IADE-FP/IADE-FP-2022-2023-Projeto>
 
@@ -426,15 +422,15 @@ Deve existir, na raiz do repositório, um ficheiro de relatório `REPORT.md` com
 
 A ausência de identificação individual no ficheiro de relatório implica a anulação da participação individual no projeto.
 
-O código fonte entregue será sujeito a validação por um conjunto de testes reservado para esse efeito, e será compilado recorrendo a GNU Make, de acordo com a configuração presente no ficheiro `Makefile`, executando apenas
+O código fonte entregue será sujeito a validação por um conjunto de testes reservado para esse efeito, e será compilado com a seguinte instrução:
 
 ```bash
-make
+gcc main.c -o main
 ```
 
-A compilação deve gerar o programa `main` no diretório `bin`, que será executado com as instruções dos testes.
+A compilação deve gerar o programa `main` no diretório atual, que será executado com as instruções dos testes.
 
-A entrega no *e-learning* corresponde a um ficheiro `zip` do repositório *GitHub Classroom*, excluindo ficheiros compilados (i.e., executar `make clean` antes de construir o `zip`).
+A entrega no *e-learning* corresponde a um ficheiro `zip` do repositório *GitHub Classroom*, excluindo eventuais ficheiros compilados.
 
 ## Prova de Autoria
 
